@@ -1,0 +1,9 @@
+# ==========================================================
+# Vivado Makefile
+# Team: ChipUp
+# DVCon India 2026 Stage 2B
+# ==========================================================
+all:
+	vivado -mode batch -source run_vivado.tcl
+clean:
+	del /Q *.jou *.log *.str *.Xil >nul 2>nul

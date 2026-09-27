@@ -1,0 +1,123 @@
+Task-Aware Object Selection Using FPGA-Based Two-Stage Approximation
+
+Team Name : ChipUp
+Team ID   : 188
+Institution: Chennai Institute of Technology - Anna University
+Authors   : Rosiny C A, Varsha S, Reshmi K
+
+======================================================================
+OVERVIEW
+======================================================================
+
+Object detection and task-relevance scoring run in software (YOLOv8),
+which sends the top 5 scored candidates to this hardware stage. Our
+accelerator takes those 5 values, computes the final ranking on the
+FPGA, and picks the best (primary) and second-best (alternative)
+candidate.
+
+The accelerator is integrated into the VEGA SoC in place of the
+organizer's example accelerator. Nothing else in the SoC is changed.
+
+======================================================================
+FOLDER STRUCTURE
+======================================================================
+
+DVCon_2026/  
+├── RUN/                                  Launch script (run.sh) — unmodified
+├── TCL/                                  Simulation & synthesis scripts — unmodified
+├── DVCon_SoC_XDC/                        FPGA constraints — unmodified
+├── VIVADO_PROJECT/                       Vivado project files (simulation + synthesis runs)
+├── GEN_BIT_OUT/                          Reports generated automatically by run.sh
+├── RESULTS_PROOF/                        Waveform screenshots, timing/power/DRC reports,
+├── Application/                          Firmware — main.c is ours, rest is unmodified
+└── DVCon_SoC_SRC/
+    ├── AS1061_SYSTEM/      VEGA processor — unmodified
+    ├── MEMORY_IP/          ROM — our compiled firmware image is loaded here
+    ├── TB/                 Testbench — unmodified
+    ├── TOP/                Top.vhd — unmodified
+    └── ACCELERATOR_IP/     >>> OUR ACCELERATOR <<<
+        ├── Accelerator_Top.v
+        ├── axi_master_interface.v
+        ├── axi_slave_interface.v
+        └── top2_comparator.v
+
+======================================================================
+HOW TO REPRODUCE OUR RESULTS
+======================================================================
+
+No files need to be edited. The firmware is already built and its
+output (.mif) is already loaded into
+DVCon_SoC_SRC/MEMORY_IP/rom_32KB_axi/, so simulation works
+immediately.
+
+1. RUN THE SIMULATION
+
+   cd DVCon_2026/RUN
+   ./run.sh
+
+   Select Option 1 -> Vivado Simulation.
+
+   Once Vivado opens, in the Tcl Console at the bottom, type:
+
+      run 500 us
+
+   The signals listed below are to be checked in the waveforms and attached in 
+   RESULTS_PROOF/ (also shown in  Report.docx, Section 5):
+
+      acc_m_axi_awaddr, acc_m_axi_wdata
+         - accelerator's result write-back
+         
+      acc_s_axi_awaddr, acc_s_axi_wdata
+         - CPU writing to accelerator registers
+         
+      confidence_0..4, primary_score, alternative_score
+         - internal scoring signals
+
+2. RUN SYNTHESIS
+
+   cd DVCon_2026/RUN
+   ./run.sh
+
+   Select Option 2 -> FPGA Implementation -> Synthesis Only.
+
+   This automatically generates report_utilization_summary.rpt and
+   report_hierarchical_utilization_summary.rpt in GEN_BIT_OUT/.
+
+   We have additionally generated the timing, power, and DRC reports.
+
+   Copies of these reports are already included in RESULTS_PROOF/.
+
+======================================================================
+REBUILDING THE FIRMWARE (OPTIONAL - NOT REQUIRED)
+======================================================================
+
+The firmware is already compiled and its .mif is already in place.
+If you would like to rebuild it from source anyway:
+
+   cd DVCon_2026/Application
+   ./sim_app_compile_and_mif.sh
+
+This regenerates accelerator_test.mif. Copy it into the ROM's memory
+folder:
+
+   cp Application/dummy_firmware_accelarator_64_64_matrix_20000/build/accelerator_test.mif DVCon_SoC_SRC/MEMORY_IP/rom_32KB_axi/
+
+======================================================================
+REPORTS AND PROOF (RESULTS_PROOF/)
+======================================================================
+
+- report_timing_summary.rpt
+- report_power.rpt
+- report_drc.rpt
+- Waveform screenshots for all 5 test cases
+
+======================================================================
+TOOLS USED
+======================================================================
+
+AMD Vivado 2026.1 (Simulator + Synthesis), targeting Digilent
+Genesys 2. No tools outside the contest's permitted list were used.
+
+
+
+    

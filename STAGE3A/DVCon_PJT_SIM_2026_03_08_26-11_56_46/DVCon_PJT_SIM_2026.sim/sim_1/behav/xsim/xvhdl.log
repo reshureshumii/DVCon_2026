@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/TOP/Top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Top'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/TB/test_bench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_bench'

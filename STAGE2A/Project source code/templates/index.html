@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChipUp | Task-Aware Object Detection | DVCon India 2026</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Segoe UI',sans-serif;background:#eef2f7;color:#1a1a2e;}
+
+    header{background:#0d1b2a;color:#fff;padding:14px 30px;display:flex;align-items:center;justify-content:space-between;}
+    header h1{font-size:1.15rem;letter-spacing:.3px;}
+    header .sub{font-size:.76rem;color:#8ab4d4;margin-bottom:3px;}
+    header .team{text-align:right;font-size:.76rem;color:#8ab4d4;}
+
+    /* Pipeline */
+    .pipeline{background:#fff;border-bottom:2px solid #d0dce8;padding:10px 20px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0;}
+    .pip-step{display:flex;flex-direction:column;align-items:center;padding:6px 14px;font-size:.72rem;font-weight:600;color:#0d1b2a;text-align:center;min-width:100px;border-radius:5px;}
+    .pip-step small{font-size:.65rem;color:#888;font-weight:400;}
+    .pip-step.active{background:#0d1b2a;color:#fff;}
+    .pip-step.active small{color:#aac4e0;}
+    .pip-arrow{font-size:1rem;color:#8ab4d4;padding:0 2px;font-weight:700;}
+
+    .container{max-width:1200px;margin:22px auto;padding:0 16px;}
+
+    .card{background:#fff;border-radius:10px;padding:20px 22px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.07);}
+    .card-title{font-size:.78rem;font-weight:700;color:#fff;display:inline-block;padding:4px 13px;border-radius:4px;margin-bottom:13px;letter-spacing:.5px;text-transform:uppercase;}
+    .ct-input{background:#37474f;}
+    .ct-stage1{background:#1565c0;}
+    .ct-stage2{background:#2e7d32;}
+    .ct-dropped{background:#b71c1c;}
+
+    .form-row{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end;}
+    .form-group{display:flex;flex-direction:column;gap:5px;}
+    label{font-size:.76rem;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.4px;}
+    select,input[type="file"]{padding:9px 12px;border:1.5px solid #c8d8e8;border-radius:6px;font-size:.87rem;background:#f8fafc;min-width:260px;}
+    button{background:#0d1b2a;color:#fff;border:none;padding:10px 24px;border-radius:6px;font-size:.9rem;cursor:pointer;font-weight:700;transition:background .2s;}
+    button:hover{background:#1a3a5c;}
+    button:disabled{background:#aaa;cursor:not-allowed;}
+    #preview{max-width:260px;max-height:170px;border-radius:6px;border:1.5px solid #d0dce8;display:none;margin-top:12px;}
+
+    .results-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+    @media(max-width:720px){.results-grid{grid-template-columns:1fr;}}
+    #result-image{width:100%;border-radius:8px;border:1.5px solid #d0dce8;}
+
+    .formula{background:#f0f4f8;border-left:4px solid #0d1b2a;padding:9px 15px;border-radius:4px;font-family:monospace;font-size:.9rem;color:#0d1b2a;margin-bottom:13px;}
+    .note-box{background:#e3f2fd;border-left:4px solid #1565c0;padding:9px 15px;border-radius:4px;font-size:.8rem;color:#0d1b2a;margin-bottom:13px;line-height:1.5;}
+
+    /* Top-2 object cards */
+    .top2-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;}
+    @media(max-width:600px){.top2-grid{grid-template-columns:1fr;}}
+    .obj-card{border-radius:8px;padding:14px 16px;border:2px solid;}
+    .obj-card.primary{border-color:#2e7d32;background:#f1f8f1;}
+    .obj-card.alternative{border-color:#e65100;background:#fff8f3;}
+    .obj-card h3{font-size:.98rem;margin-bottom:7px;text-transform:capitalize;}
+    .badge{display:inline-block;padding:2px 10px;border-radius:10px;font-size:.7rem;font-weight:700;margin-bottom:7px;}
+    .bp{background:#2e7d32;color:#fff;}
+    .ba{background:#e65100;color:#fff;}
+    .kv{display:flex;justify-content:space-between;font-size:.81rem;padding:3px 0;border-bottom:1px solid #e0e8f0;}
+    .kv:last-child{border-bottom:none;}
+    .kv .k{color:#666;}
+    .kv .v{font-weight:700;color:#0d1b2a;}
+
+    /* Tables */
+    table{width:100%;border-collapse:collapse;font-size:.8rem;}
+    thead{background:#0d1b2a;color:#fff;}
+    th{padding:8px 10px;text-align:left;font-weight:600;}
+    td{padding:7px 10px;border-bottom:1px solid #eef2f7;}
+    tr:last-child td{border-bottom:none;}
+    tr.primary-row td{background:#e8f5e9;font-weight:700;}
+    tr.alt-row td{background:#fff3e0;font-weight:600;}
+
+    .tier-tag{display:inline-block;padding:1px 8px;border-radius:9px;font-size:.68rem;font-weight:700;}
+    .t-high{background:#e8f5e9;color:#1b5e20;}
+    .t-med{background:#fff8e1;color:#e65100;}
+    .t-fall{background:#e3f2fd;color:#1565c0;}
+    .t-def{background:#fce4ec;color:#b71c1c;}
+
+    .pass{color:#2e7d32;font-weight:700;}
+    .fail{color:#b71c1c;font-weight:700;}
+
+    .bar-wrap{display:flex;align-items:center;gap:5px;}
+    .bar{height:8px;border-radius:4px;background:#0d1b2a;min-width:3px;}
+
+    #loading{display:none;text-align:center;padding:26px;color:#555;font-size:.92rem;}
+    #error-box{display:none;background:#fce4ec;border:1.5px solid #e57373;border-radius:6px;padding:10px 15px;color:#c62828;margin-top:10px;font-size:.85rem;}
+    #results-section{display:none;}
+
+    .legend{display:flex;gap:18px;font-size:.76rem;color:#555;margin-bottom:8px;flex-wrap:wrap;}
+    .leg-dot{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:5px;vertical-align:middle;}
+
+    footer{text-align:center;padding:16px;color:#999;font-size:.72rem;}
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="sub">DVCon India 2026 Design Contest &nbsp;|&nbsp; Team ID: 188 &nbsp;|&nbsp; Chennai Institute of Technology – Anna University</div>
+    <h1>Task-Aware Object Selection Using FPGA-Based Two-Stage Approximation</h1>
+  </div>
+  <div class="team">ChipUp<br>Rosiny C A &nbsp;·&nbsp; Varsha S &nbsp;·&nbsp; Reshmi K</div>
+</header>
+
+<!-- Pipeline Banner -->
+<div class="pipeline">
+  <div class="pip-step">Image + Task</div>
+  <div class="pip-arrow">&rarr;</div>
+  <div class="pip-step">YOLO Detection</div>
+  <div class="pip-arrow">&rarr;</div>
+  <div class="pip-step active">Score1 Compute<br><small>VEGA Processor</small></div>
+  <div class="pip-arrow">&rarr;</div>
+  <div class="pip-step active">Filter &amp; Rank<br><small>Stage 1 Output</small></div>
+  <div class="pip-arrow">&rarr;</div>
+  <div class="pip-step">FPGA Approx Check<br><small>Stage 2.1</small></div>
+  <div class="pip-arrow">&rarr;</div>
+  <div class="pip-step">Full Similarity<br><small>Stage 2.2</small></div>
+  <div class="pip-arrow">&rarr;</div>
+  <div class="pip-step">Best Object<br><small>Final Output</small></div>
+</div>
+
+<div class="container">
+
+  <!-- Input -->
+  <div class="card">
+    <div class="card-title ct-input">Input</div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Upload Image</label>
+        <input type="file" id="image-input" accept="image/*" onchange="previewImage(event)"/>
+      </div>
+      <div class="form-group">
+        <label>Select Task (1 of 14)</label>
+        <select id="task-select">
+          <option value="">-- Select a task --</option>
+          {% for task in tasks %}
+          <option value="{{ task }}">{{ task }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>&nbsp;</label>
+        <button id="detect-btn" onclick="runDetection()">Run Detection</button>
+      </div>
+    </div>
+    <img id="preview" src="" alt="Preview"/>
+    <div id="error-box"></div>
+  </div>
+
+  <div id="loading">Running YOLO detection and computing task-aware scores...</div>
+
+  <div id="results-section">
+
+    <div class="results-grid">
+      <!-- Annotated Image -->
+      <div class="card">
+        <div class="card-title ct-stage1">Annotated Output</div>
+        <div class="legend">
+          <span><span class="leg-dot" style="background:#00c800;"></span>Primary (Best)</span>
+          <span><span class="leg-dot" style="background:#ff8c00;"></span>Alternative</span>
+          <span><span class="leg-dot" style="background:#505050;"></span>Filtered Out</span>
+        </div>
+        <img id="result-image" src="" alt="Result"/>
+      </div>
+
+      <!-- Stage 1 Summary -->
+      <div class="card">
+        <div class="card-title ct-stage1">Stage 1 — VEGA Processor Output</div>
+        <div class="formula">Score1 = Detection Confidence x Task Relevance Weight</div>
+        <div class="note-box">
+          YOLO detects all objects and assigns confidence scores. Task relevance weights are
+          applied from a predefined priority map (High / Medium / Semantic Fallback / Default).
+          Objects with <strong>Score1 &lt; 0.08</strong> are filtered out.
+          The <strong>top 2 candidates</strong> are forwarded to the FPGA accelerator for Stage 2.
+        </div>
+        <div class="top2-grid" id="top2-cards"></div>
+
+        <p style="font-size:.76rem;font-weight:700;color:#0d1b2a;margin-bottom:6px;text-transform:uppercase;letter-spacing:.4px;">All Detections — Scored and Ranked</p>
+        <table>
+          <thead>
+            <tr><th>#</th><th>Object</th><th>Confidence</th><th>Relevance</th><th>Tier</th><th>Score1</th><th>Stage 1 Result</th></tr>
+          </thead>
+          <tbody id="detections-table"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Stage 2 FPGA -->
+    <div class="card">
+      <div class="card-title ct-stage2">Stage 2 — FPGA Accelerator (Candidates Forwarded)</div>
+      <div class="note-box">
+        The top 2 objects from Stage 1 are transferred to the FPGA accelerator.<br>
+        <strong>Stage 2.1 — Approximate Similarity Check:</strong> Fast, lightweight computation using reduced precision. Quickly rejects weak candidates.<br>
+        <strong>Stage 2.2 — Full Similarity Computation:</strong> Detailed analysis on remaining candidates. Produces final best object selection with bounding box.
+      </div>
+      <div class="top2-grid" id="fpga-cards"></div>
+    </div>
+
+    <!-- Filtered Out -->
+    <div class="card" id="dropped-card" style="display:none;">
+      <div class="card-title ct-dropped">Filtered Out in Stage 1 (Score1 &lt; 0.08 Threshold)</div>
+      <p style="font-size:.78rem;color:#b71c1c;margin-bottom:10px;">These objects were rejected by the VEGA processor and do not proceed to FPGA evaluation.</p>
+      <table>
+        <thead>
+          <tr><th>#</th><th>Object</th><th>Confidence</th><th>Relevance Weight</th><th>Score1</th><th>Reason</th></tr>
+        </thead>
+        <tbody id="dropped-table"></tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<footer>ChipUp &nbsp;|&nbsp; Rosiny C A, Varsha S, Reshmi K &nbsp;|&nbsp; DVCon India 2026 Design Contest &nbsp;|&nbsp; Chennai Institute of Technology – Anna University</footer>
+
+<script>
+function previewImage(e){
+  const f=e.target.files[0];if(!f)return;
+  const r=new FileReader();
+  r.onload=ev=>{const p=document.getElementById("preview");p.src=ev.target.result;p.style.display="block";};
+  r.readAsDataURL(f);
+}
+
+function tierTag(t){
+  const m={"High":'<span class="tier-tag t-high">High</span>',
+            "Medium":'<span class="tier-tag t-med">Medium</span>',
+            "Semantic Fallback":'<span class="tier-tag t-fall">Semantic Fallback</span>',
+            "Default":'<span class="tier-tag t-def">Default</span>'};
+  return m[t]||`<span class="tier-tag t-def">${t}</span>`;
+}
+
+function objCard(det,role){
+  const ip=role==="Primary";
+  return `<div class="obj-card ${ip?'primary':'alternative'}">
+    <span class="badge ${ip?'bp':'ba'}">${ip?'PRIMARY':'ALTERNATIVE'}</span>
+    <h3>${det.class}</h3>
+    <div class="kv"><span class="k">YOLO Confidence</span><span class="v">${(det.confidence*100).toFixed(1)}%</span></div>
+    <div class="kv"><span class="k">Task Relevance</span><span class="v">${det.task_relevance}</span></div>
+    <div class="kv"><span class="k">Priority Tier</span><span class="v">${det.tier}</span></div>
+    <div class="kv"><span class="k">Score1</span><span class="v" style="color:${ip?'#2e7d32':'#e65100'};font-size:1rem;">${det.score1}</span></div>
+  </div>`;
+}
+
+async function runDetection(){
+  const img=document.getElementById("image-input");
+  const tsk=document.getElementById("task-select");
+  const err=document.getElementById("error-box");
+  err.style.display="none";
+  if(!img.files[0]){showError("Please upload an image.");return;}
+  if(!tsk.value){showError("Please select a task.");return;}
+
+  const fd=new FormData();
+  fd.append("image",img.files[0]);
+  fd.append("task",tsk.value);
+
+  document.getElementById("loading").style.display="block";
+  document.getElementById("results-section").style.display="none";
+  document.getElementById("detect-btn").disabled=true;
+
+  try{
+    const res=await fetch("/detect",{method:"POST",body:fd});
+    const data=await res.json();
+    if(data.error){showError(data.error);return;}
+
+    document.getElementById("result-image").src="data:image/jpeg;base64,"+data.image;
+
+    // Top 2 Stage 1
+    const t2=document.getElementById("top2-cards");
+    t2.innerHTML="";
+    if(data.top2.length>0)t2.innerHTML+=objCard(data.top2[0],"Primary");
+    if(data.top2.length>1)t2.innerHTML+=objCard(data.top2[1],"Alternative");
+    if(data.top2.length===0)t2.innerHTML="<p style='color:#b71c1c;'>No objects passed Stage 1 filter.</p>";
+
+    // Full table
+    const tb=document.getElementById("detections-table");
+    tb.innerHTML="";
+    data.passed_filter.forEach((d,i)=>{
+      const cls=i===0?"primary-row":i===1?"alt-row":"";
+      const bw=Math.round(d.score1*180);
+      tb.innerHTML+=`<tr class="${cls}">
+        <td>${i===0?"1 (Best)":i===1?"2 (Alt)":i+1}</td>
+        <td>${d.class}</td>
+        <td>${(d.confidence*100).toFixed(1)}%</td>
+        <td>${d.task_relevance}</td>
+        <td>${tierTag(d.tier)}</td>
+        <td><div class="bar-wrap"><div class="bar" style="width:${bw}px"></div><span>${d.score1}</span></div></td>
+        <td><span class="pass">PASSED</span></td>
+      </tr>`;
+    });
+    data.dropped.forEach((d,i)=>{
+      tb.innerHTML+=`<tr>
+        <td style="color:#aaa;">${data.passed_filter.length+i+1}</td>
+        <td style="color:#aaa;">${d.class}</td>
+        <td style="color:#aaa;">${(d.confidence*100).toFixed(1)}%</td>
+        <td style="color:#aaa;">${d.task_relevance}</td>
+        <td>${tierTag(d.tier)}</td>
+        <td style="color:#aaa;">${d.score1}</td>
+        <td><span class="fail">FILTERED</span></td>
+      </tr>`;
+    });
+
+    // FPGA Stage 2
+    const fp=document.getElementById("fpga-cards");
+    fp.innerHTML="";
+    if(data.top2.length>0)fp.innerHTML+=objCard(data.top2[0],"Primary");
+    if(data.top2.length>1)fp.innerHTML+=objCard(data.top2[1],"Alternative");
+    if(data.top2.length===0)fp.innerHTML="<p style='color:#b71c1c;'>No candidates to forward.</p>";
+
+    // Dropped section
+    const dc=document.getElementById("dropped-card");
+    const dt=document.getElementById("dropped-table");
+    dt.innerHTML="";
+    if(data.dropped.length>0){
+      dc.style.display="block";
+      data.dropped.forEach((d,i)=>{
+        dt.innerHTML+=`<tr>
+          <td>${i+1}</td><td>${d.class}</td>
+          <td>${(d.confidence*100).toFixed(1)}%</td>
+          <td>${d.task_relevance}</td>
+          <td>${d.score1}</td>
+          <td>Score1 below 0.08 threshold</td>
+        </tr>`;
+      });
+    }else{dc.style.display="none";}
+
+    document.getElementById("results-section").style.display="block";
+  }catch(ex){
+    showError("Request failed: "+ex.message);
+  }finally{
+    document.getElementById("loading").style.display="none";
+    document.getElementById("detect-btn").disabled=false;
+  }
+}
+
+function showError(m){
+  const b=document.getElementById("error-box");
+  b.textContent=m;b.style.display="block";
+  document.getElementById("loading").style.display="none";
+  document.getElementById("detect-btn").disabled=false;
+}
+</script>
+</body>
+</html>

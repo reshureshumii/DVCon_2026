@@ -1,0 +1,235 @@
+Task-Aware Object Selection Using FPGA-Based Two-Stage Approximation
+
+Team Name : ChipUp
+Team ID   : 188
+Institution: Chennai Institute of Technology - Anna University
+
+======================================================================
+OVERVIEW
+======================================================================
+
+This project implements a hardware accelerator for task-aware object
+selection using an FPGA-based two-stage approximation pipeline.
+
+The hardware receives candidate objects from the Stage 1 software
+pipeline and performs task-aware ranking using RTL modules. It computes
+task-aware scores (Score1 = Confidence x Task Relevance), filters
+low-priority objects using a configurable threshold, selects the best
+two candidate objects, and stores the results through an AXI4 Master
+interface.
+
+The complete RTL design has been functionally verified using QuestaSim.
+RTL synthesis has been completed using Xilinx Vivado 2018.2.
+
+======================================================================
+PROJECT FILES
+======================================================================
+
+top_module.v            - Top-level RTL module
+top2_comparator.v       - Score computation and object selection
+axi_slave_interface.v   - AXI4 Slave interface
+axi_master_interface.v  - AXI4 Master interface
+memory_model.v          - Simulation-only AXI memory model
+testbench.v             - Functional verification testbench
+Makefile                - QuestaSim simulation automation
+Makefile_Vivado         - Vivado synthesis automation
+run_vivado.tcl          - Vivado Tcl synthesis script
+README                  - This file
+
+======================================================================
+RTL MODULE DESCRIPTION
+======================================================================
+
+1. top_module.v
+   Top-level module integrating all RTL components.
+
+2. top2_comparator.v
+   - Computes task-aware score: Score1 = Confidence x Task Relevance
+   - Filters objects below the configured threshold
+   - Selects the Primary and Alternative candidate objects
+   - Uses DSP48E1 blocks for efficient multiply operations
+
+3. axi_slave_interface.v
+   Implements the AXI4 Slave interface.
+   Functions:
+   - Receives object confidence values from the host
+   - Receives task relevance weights from the host
+   - Accepts start command to initiate hardware processing
+   - Returns processed results to the host
+
+4. axi_master_interface.v
+   Implements the AXI4 Master interface.
+   - Writes computed results into memory after processing completes
+   - Implements 8-state FSM: IDLE, WR_ADDR_1/2, WR_DATA_1/2,
+     WR_RESP_1/2, DONE
+
+5. memory_model.v
+   Simulation-only AXI memory model.
+   Used only for functional verification in QuestaSim.
+   Not included in FPGA synthesis.
+
+6. testbench.v
+   Verifies:
+   - Score computation (Score1 = Confidence x Task Relevance)
+   - Threshold filtering
+   - Primary object selection
+   - Alternative object selection
+   - AXI read/write transactions
+   - Displays PASS/FAIL summary after simulation
+
+======================================================================
+HARDWARE PIPELINE
+======================================================================
+
+   AXI4 Slave Interface
+          |
+          v
+   Top-2 Comparator (Score1 = Confidence x Task Relevance)
+          |
+          v
+   AXI4 Master Interface
+          |
+          v
+   Memory Model (Simulation only)
+
+======================================================================
+SOFTWARE REQUIREMENTS
+======================================================================
+
+- QuestaSim (for RTL simulation)
+- Xilinx Vivado 2018.2 (for RTL synthesis)
+- GNU Make / mingw32-make (Windows)
+
+======================================================================
+COMPILATION (QuestaSim)
+======================================================================
+
+1. Extract the project files.
+
+2. Open Command Prompt in the project directory.
+
+3. Run:
+
+      # Windows (MinGW/MSYS):
+      mingw32-make -f Makefile_Questa compile
+
+      # Linux / macOS:
+      make -f Makefile_Questa compile
+
+   This command:
+   - Creates the required work library
+   - Maps the work library
+   - Compiles all RTL source files
+   - Compiles the testbench
+
+   Successful compilation ends with:
+      Errors: 0
+      Warnings: 0
+
+======================================================================
+SIMULATION (QuestaSim)
+======================================================================
+
+1. Open QuestaSim.
+
+2. Change working directory to the project folder:
+
+      cd <project_directory>
+
+3. Load the testbench:
+
+      vsim -voptargs="+acc" work.testbench
+
+4. Run the simulation:
+
+      run 20us
+
+   The testbench executes $finish at the end of simulation.
+   Select "No" in the confirmation dialog to keep the waveform open
+   for inspection.
+
+======================================================================
+VIVADO SYNTHESIS
+======================================================================
+
+Target Device : xc7k70tfbv676-1 (Kintex-7)
+Tool          : Xilinx Vivado 2018.2
+
+To synthesize the RTL:
+
+1. Open Command Prompt in the project directory.
+
+2. Run either:
+
+      mingw32-make -f Makefile_Vivado     (Windows)
+
+   or directly:
+
+      vivado -mode batch -source run_vivado.tcl
+
+   This generates:
+   - utilization_report.txt
+   - timing_report.txt
+
+Note: memory_model.v and testbench.v are excluded from synthesis.
+
+======================================================================
+SYNTHESIS RESULTS (Vivado 2018.2 - xc7k70tfbv676-1)
+======================================================================
+
+Cell Usage:
+   DSP48E1  :   5      (Score1 multiply operations)
+   LUT6     : 466
+   LUT5     : 109
+   LUT4     : 253
+   LUT2     :  77
+   FDRE     : 682
+   CARRY4   :  28
+   BUFG     :   1
+
+Instance Areas:
+   top_module (total)     : 2112 cells
+     axi_master_interface :   88 cells
+     axi_slave_interface  :  496 cells
+     top2_comparator      : 1066 cells
+
+Synthesis Status: 0 Errors, 0 Critical Warnings
+
+======================================================================
+EXPECTED SIMULATION OUTPUT
+======================================================================
+
+The simulation displays:
+   - Loaded input objects
+   - Hardware latency
+   - Valid mask
+   - Primary object selected
+   - Alternative object selected
+   - PASS/FAIL status per test case
+
+Expected final result:
+   TOTAL: 5 PASS, 0 FAIL
+   ALL TESTS PASSED
+
+======================================================================
+NOTES
+======================================================================
+
+- memory_model.v is for simulation only and is not synthesized.
+- The RTL design has been functionally verified using QuestaSim.
+- The design follows a modular AXI4-based architecture suitable
+  for FPGA-based integration with the VEGA processor in Stage 3A.
+- 5 DSP48E1 blocks are inferred automatically by Vivado for the
+  Score1 multiply operations in top2_comparator.v.
+
+======================================================================
+AUTHORS
+======================================================================
+
+Rosiny C A
+Varsha S
+Reshmi K
+
+Team   : ChipUp
+Team ID: 188
+DVCon India 2026 - Design Contest Stage 2B

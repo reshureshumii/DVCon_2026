@@ -1,0 +1,21 @@
+# ============================================================
+# Makefile_Questa
+# Task-Aware Object Selection Using FPGA-Based
+# Two-Stage Approximation
+# Team: ChipUp
+# ============================================================
+SRC = \
+rtl/top_module.v \
+rtl/top2_comparator.v \
+rtl/axi_slave_interface.v \
+rtl/axi_master_interface.v \
+rtl/memory_model.v \
+rtl/testbench.v
+
+compile:
+	@if not exist work vlib work
+	vmap work work
+	vlog $(SRC)
+
+clean:
+	-del /Q work\* >nul 2>nul

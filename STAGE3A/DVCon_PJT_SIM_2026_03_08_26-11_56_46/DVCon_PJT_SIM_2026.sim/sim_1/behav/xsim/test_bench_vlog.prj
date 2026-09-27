@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog blk_mem_gen_v8_4_1  --include "../../../../../../../../AMD/2026.1/data/rsb/busdef" \
+"../../../../DVCon_PJT_SIM_2026.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" \
+
+verilog xil_defaultlib  --include "../../../../../../../../AMD/2026.1/data/rsb/busdef" \
+"../../../../../../DVCon_SoC_SRC/MEMORY_IP/rom_32KB_axi/sim/rom_32KB_axi.v" \
+"../../../../../../DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v" \
+"../../../../../../DVCon_SoC_SRC/ACCELERATOR_IP/Accelerator_Top.v" \
+"../../../../../../DVCon_SoC_SRC/ACCELERATOR_IP/axi_master_interface.v" \
+"../../../../../../DVCon_SoC_SRC/ACCELERATOR_IP/axi_slave_interface.v" \
+"../../../../../../DVCon_SoC_SRC/ACCELERATOR_IP/top2_comparator.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

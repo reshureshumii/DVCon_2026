@@ -1,0 +1,1124 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/resh/AMD/2026.1/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L blk_mem_gen_v8_4_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_bench_behav xil_defaultlib.test_bench xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-4940] 'ddr3_model' remains a black box since it has no binding entity [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/TB/test_bench.vhd:212]
+WARNING: [VRFC 10-4940] 'ddr3_model' remains a black box since it has no binding entity [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/TB/test_bench.vhd:234]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:366924]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:366931]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:366934]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:395232]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:395958]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:395964]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:395970]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:395976]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:396144]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:396636]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:397229]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:397819]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:398426]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:399016]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:399607]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:400197]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:400788]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:401379]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:401992]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:401998]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'bram_we_a' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:6059]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:598737]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'DI' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:598739]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:6211]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:6217]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:6223]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:6229]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:6235]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:6262]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:6268]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:6274]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:6280]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:75964]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1010716]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1010723]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:10379]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:11417]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:25661]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:29830]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:50380]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:50430]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:54908]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:60647]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:68490]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:71887]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:72055]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:72375]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:72555]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:73044]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:73860]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:74252]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:74426]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1013128]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1013445]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:796224]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:798389]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:801615]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:801804]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:801811]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:802503]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:802506]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:803549]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:803567]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:804698]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:804705]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:804726]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:833426]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:833457]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:833460]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:833591]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:833594]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:833611]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:833614]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:834099]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:834102]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:834237]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:834240]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:834251]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:834254]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:834265]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:834268]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:834300]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:834303]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846108]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846126]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846138]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846150]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846186]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846198]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846288]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846294]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846536]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846542]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846720]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846726]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846756]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846762]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846822]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:846828]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:851842]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:242501]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:242507]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:242513]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:242813]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:242819]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:242831]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:242837]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:242843]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:242849]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:242981]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:245338]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:245344]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:245650]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:245662]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:245692]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:979825]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:979831]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:979837]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:979843]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:979849]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:979855]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:979873]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:979879]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1001855]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1001861]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1001867]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1001873]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1001879]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1001885]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1001891]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1001897]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1002767]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1002773]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1002779]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1002785]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1002791]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1002827]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1002833]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1003241]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1003247]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1003253]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1003259]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1003472]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1003478]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1003681]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1003687]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1067359]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1067371]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1068854]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1028162]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1032605]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1034543]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1034546]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1034551]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1034554]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1034559]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1039330]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1039351]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1039372]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1039386]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1039393]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1039396]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1039429]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1039437]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1039440]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1040943]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1041038]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1041148]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1043532]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1043539]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1043634]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1043641]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1043760]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1043767]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1045635]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1045663]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1045684]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1046647]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1046684]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1046691]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1073942]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1073945]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1074640]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1074661]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1074664]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1087430]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1087433]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1115843]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1115864]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1115871]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1116329]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1116336]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1121000]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1121059]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1129719]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1129731]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1129749]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1129761]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1129779]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1129791]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1129863]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1129875]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1129893]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1129959]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1182805]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1182808]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1182828]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1185306]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1185309]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1185757]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1186059]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1186652]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1186658]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1186682]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1186688]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1186802]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1186808]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1186811]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1187164]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1187192]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1187195]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:407813]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:421161]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:439627]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:443423]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:444125]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:444495]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:444498]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:445303]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:445306]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:451657]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:455258]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:455703]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:455709]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:455715]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:458942]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:460514]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:461370]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:461373]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:466063]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:466069]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:466081]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:466087]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:466680]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:476023]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:476260]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:477074]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:477077]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:478567]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:479481]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:479558]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:481579]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:481582]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:494821]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:494852]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:494856]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:494863]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:496127]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:316144]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:316157]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:316764]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:324658]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:324661]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:333416]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:337815]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:338523]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:338585]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:357487]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:357783]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:358018]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:358021]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:358025]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:365109]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:267924]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:271132]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:271136]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:280830]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:282869]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:282957]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:286948]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:300868]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:300943]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1204947]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1206163]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1206166]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1206553]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1206581]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1206589]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1206884]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1222664]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1223030]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1223044]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1223059]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1224500]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1259827]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1260705]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1260913]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1260936]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1260943]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1260950]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1260957]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1260977]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1261548]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1261556]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1261559]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1261564]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1282954]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1282961]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1283023]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1284939]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1284942]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1284947]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1284950]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1294416]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1295309]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1295330]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1300485]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1300514]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1300517]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1307921]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1307952]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1309183]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1310729]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1310732]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1311624]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1311627]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1312503]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1312506]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1312782]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1312785]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1313650]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1314384]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1314992]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:519554]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:519573]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:519580]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:526606]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:526618]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:526625]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:531895]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:531898]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:536143]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:542695]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:542701]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:542713]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:544551]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:544554]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1328446]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1390637]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1390640]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1391437]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1391440]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1391899]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1391902]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1393031]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1393034]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1394090]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1394093]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1400895]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1400898]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1400904]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1402180]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1402183]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1404189]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1404192]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1404196]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1404199]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1406871]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1406874]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1406878]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1406881]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1410147]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1410150]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1410185]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1150622]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1150625]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1150682]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1150685]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1150708]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1150711]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1150728]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1150731]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1154010]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1154022]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1154034]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1154154]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1154172]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1158416]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1158944]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1161088]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:930525]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:930531]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:930543]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:930644]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:930674]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:930686]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:930920]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:930974]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:931004]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:931022]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:931034]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:931190]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973319]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973325]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973331]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973343]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973349]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973355]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973390]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973396]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973402]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973408]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973420]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973426]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973432]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973444]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973510]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973762]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973774]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973822]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:973852]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:567277]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:567280]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:567502]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:567505]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:567586]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:567589]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:567627]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:567630]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:308584]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:310145]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:310182]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:310298]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:310301]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:158186]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:195477]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:195484]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:195487]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:198264]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:8189]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:61779]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:63628]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:68117]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:68281]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:74712]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:75010]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:75308]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'DOADO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:75606]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1352288]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1352311]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1352317]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1352323]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1355829]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:91431]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:91437]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:91443]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:91449]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:91455]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:91467]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:91473]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:91479]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:91485]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:91497]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:92832]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:92850]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:92856]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:92862]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:92874]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:92880]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1364400]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1450963]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1450966]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'DOC' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:596953]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:871361]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:871367]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:871373]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:871379]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:871385]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:871397]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:871403]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:871409]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:871421]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:733794]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:733797]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:733801]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:733804]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:733808]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:733811]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:748971]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:748983]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749001]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749007]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749013]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749019]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749031]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749037]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749043]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749055]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749061]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749067]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749277]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749283]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749583]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749595]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749613]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749631]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749733]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749745]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749781]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749787]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749805]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749811]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749817]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749823]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749835]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749847]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749943]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749955]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749961]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:749967]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:754393]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:759088]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392780]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392792]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392834]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392840]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392846]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392852]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392894]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392900]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392906]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392918]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392924]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392930]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392936]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392942]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392948]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:392954]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881059]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881065]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881071]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881077]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881083]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881095]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881101]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881107]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881179]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881185]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881191]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881203]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881215]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881221]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881245]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881263]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881335]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881449]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881461]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881521]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881533]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881611]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881677]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881701]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881713]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881737]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881857]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881863]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881869]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881875]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:881881]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:882076]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:882088]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:882100]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:882106]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:882118]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:882125]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:882137]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:882143]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:882149]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:884694]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:884724]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:884730]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:884736]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:884748]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:884754]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:888490]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:888496]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:888502]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:888508]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:888562]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:888580]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:888622]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:888814]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:888940]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:888958]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:889175]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:889178]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:890004]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'master_1_araddr' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1461164]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'master_1_awaddr' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1461171]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 64 for port 'master_2_araddr' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1461193]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 64 for port 'master_2_awaddr' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1461197]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1431517]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1431634]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1432198]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:694948]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:694951]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1469673]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1469674]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1477289]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1477290]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1470408]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1470409]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1470653]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1470654]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1470898]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1470899]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1471143]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1471144]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1471388]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1471389]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1471633]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1471634]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1471878]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1471879]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1472123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1472124]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1472368]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1472369]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1469918]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1469919]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1472613]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1472614]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1473103]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1473104]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1473348]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1473349]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1473593]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1473594]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1473838]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1473839]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1474083]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1474084]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1474328]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1474329]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1474573]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1474574]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1474818]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1474819]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1475063]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1475064]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1470163]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1470164]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1475308]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1475309]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1475807]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1475808]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1472858]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1472859]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1475553]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1475554]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1476064]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1476065]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1476309]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1476310]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1476554]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1476555]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1476799]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1476800]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'DOBDO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1477044]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DOPBDOP' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1477045]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1463922]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1463925]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1465277]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'O' [/home/resh/DVCON/DVCon_2026/DVCon_SoC_SRC/AS1061_SYSTEM/AS1061_SYSTEM_TOP.v:1465280]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package std.env
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.ODDR(SRTYPE="ASYNC")
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.OBUFT
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.IOBUF
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.FDPE_default
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.RESET_gen_block
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=6.0,C...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=8.0,C...
+Compiling module xil_defaultlib.clk_wiz_eth_clk_wiz_eth_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_eth
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.SYS_CTRL_REG_scl
+Compiling module xil_defaultlib.axi_bram_ctrl_0_sng_port_arb
+Compiling module xil_defaultlib.axi_bram_ctrl_0_wrap_brst_0
+Compiling module xil_defaultlib.axi_bram_ctrl_0_rd_chnl
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.axi_bram_ctrl_0_SRL_FIFO
+Compiling module unisims_ver.FDSE_default
+Compiling module xil_defaultlib.axi_bram_ctrl_0_wrap_brst
+Compiling module xil_defaultlib.axi_bram_ctrl_0_wr_chnl
+Compiling module xil_defaultlib.axi_bram_ctrl_0_full_axi
+Compiling module xil_defaultlib.axi_bram_ctrl_0_axi_bram_ctrl_to...
+Compiling module xil_defaultlib.axi_bram_ctrl_0_axi_bram_ctrl
+Compiling module xil_defaultlib.axi_bram_ctrl_0
+Compiling module xil_defaultlib.AXI4_SYS_CTRL_Top
+Compiling module xil_defaultlib.FIFO1
+Compiling module xil_defaultlib.FIFO1_15
+Compiling module xil_defaultlib.FIFO2_16
+Compiling module xil_defaultlib.FIFO1_17
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module unisims_ver.RAMB18E1(READ_WIDTH_A=18,READ_WI...
+Compiling module xil_defaultlib.BRAM1Load_18
+Compiling module xil_defaultlib.BRAM1Load_19
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.BRAM1Load_20
+Compiling module xil_defaultlib.BRAM1Load_21
+Compiling module unisims_ver.RAM64M
+Compiling module unisims_ver.RAM64X1D
+Compiling module xil_defaultlib.RegFile_22
+Compiling module xil_defaultlib.RegFile_23
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(RDADDR_COLLIS...
+Compiling module unisims_ver.RAMB18E1(RDADDR_COLLISION_HWCONF...
+Compiling module xil_defaultlib.BRAM1Load__parameterized0_24
+Compiling module xil_defaultlib.BRAM1Load__parameterized1
+Compiling module xil_defaultlib.BRAM1Load__parameterized1_25
+Compiling module xil_defaultlib.BRAM1Load__parameterized1_26
+Compiling module xil_defaultlib.BRAM1Load__parameterized1_27
+Compiling module xil_defaultlib.mkDcache
+Compiling module unisims_ver.MUXF8
+Compiling module unisims_ver.RAM32M
+Compiling module xil_defaultlib.RegFile__parameterized0_14
+Compiling module xil_defaultlib.mkAS1061_FLOAT_GPR
+Compiling module xil_defaultlib.RegFile__parameterized0
+Compiling module xil_defaultlib.mkAS1061_GPR
+Compiling module xil_defaultlib.mkAS1061_DEC_Stage
+Compiling module xil_defaultlib.FIFO2__parameterized1
+Compiling module xil_defaultlib.FIFO2__parameterized2
+Compiling module xil_defaultlib.FIFO2__parameterized3
+Compiling module xil_defaultlib.FIFO2__parameterized4
+Compiling module xil_defaultlib.mkDMMU
+Compiling module xil_defaultlib.FIFO2__parameterized6
+Compiling module xil_defaultlib.mkDTLB
+Compiling module xil_defaultlib.mkDivider
+Compiling module unisims_ver.DSP48E1(ALUMODEREG=0,CARRYINREG=...
+Compiling module unisims_ver.DSP48E1(ALUMODEREG=0,BCASCREG=0,...
+Compiling module unisims_ver.DSP48E1(ALUMODEREG=0,BCASCREG=0,...
+Compiling module xil_defaultlib.SizedFIFO
+Compiling module xil_defaultlib.SizedFIFO__parameterized0
+Compiling module xil_defaultlib.SizedFIFO__parameterized1
+Compiling module xil_defaultlib.SizedFIFO__parameterized2
+Compiling module xil_defaultlib.FIFOL1
+Compiling module xil_defaultlib.FIFOL1__parameterized0
+Compiling module xil_defaultlib.FIFOL1__parameterized2
+Compiling module xil_defaultlib.FIFOL1__parameterized3
+Compiling module xil_defaultlib.FIFOL1__parameterized4
+Compiling module xil_defaultlib.FIFO2__parameterized7
+Compiling module xil_defaultlib.FIFO2__parameterized8
+Compiling module unisims_ver.DSP48E1(ALUMODEREG=0,CARRYINREG=...
+Compiling module xil_defaultlib.SizedFIFO__parameterized3
+Compiling module xil_defaultlib.mkFPU
+Compiling module xil_defaultlib.SyncFIFO1
+Compiling module xil_defaultlib.SyncFIFO1__parameterized0
+Compiling module xil_defaultlib.mkFPU_Wrapper
+Compiling module xil_defaultlib.mkFPU_Top
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module xil_defaultlib.mkMultiplier
+Compiling module xil_defaultlib.mkExeMem
+Compiling module xil_defaultlib.FIFO2
+Compiling module unisims_ver.RAM128X1D
+Compiling module xil_defaultlib.RegFile__parameterized1
+Compiling module xil_defaultlib.RegFile__parameterized1_13
+Compiling module xil_defaultlib.mkBPU
+Compiling module xil_defaultlib.SizedFIFO__parameterized4
+Compiling module xil_defaultlib.SizedFIFO__parameterized4_6
+Compiling module xil_defaultlib.FIFO2__parameterized9
+Compiling module xil_defaultlib.FIFO2__parameterized10
+Compiling module xil_defaultlib.FIFO2__parameterized0
+Compiling module xil_defaultlib.FIFO2__parameterized11
+Compiling module xil_defaultlib.FIFO2__parameterized12
+Compiling module xil_defaultlib.BRAM1Load
+Compiling module xil_defaultlib.BRAM1Load_7
+Compiling module xil_defaultlib.BRAM1Load_8
+Compiling module xil_defaultlib.BRAM1Load_9
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.BRAM1Load__parameterized0
+Compiling module xil_defaultlib.BRAM1Load__parameterized2
+Compiling module xil_defaultlib.BRAM1Load__parameterized2_10
+Compiling module xil_defaultlib.BRAM1Load__parameterized2_11
+Compiling module xil_defaultlib.BRAM1Load__parameterized2_12
+Compiling module xil_defaultlib.mkIcache
+Compiling module xil_defaultlib.FIFO1__parameterized0
+Compiling module xil_defaultlib.mkITLB
+Compiling module xil_defaultlib.mkRas_Ex
+Compiling module xil_defaultlib.mkRas_Fet
+Compiling module xil_defaultlib.mkFetch
+Compiling module xil_defaultlib.FIFO2__parameterized13
+Compiling module xil_defaultlib.FIFO2__parameterized5
+Compiling module xil_defaultlib.FIFO2__parameterized14
+Compiling module xil_defaultlib.FIFO2__parameterized15
+Compiling module xil_defaultlib.mkIMMU
+Compiling module xil_defaultlib.FIFO2__parameterized16_2
+Compiling module xil_defaultlib.FIFO2__parameterized17_3
+Compiling module xil_defaultlib.FIFO2__parameterized16_4
+Compiling module xil_defaultlib.FIFO2__parameterized18
+Compiling module xil_defaultlib.FIFO2__parameterized19_5
+Compiling module xil_defaultlib.mkdmem
+Compiling module xil_defaultlib.FIFO2__parameterized16
+Compiling module xil_defaultlib.FIFO2__parameterized17
+Compiling module xil_defaultlib.FIFO2__parameterized19
+Compiling module xil_defaultlib.mkimem
+Compiling module xil_defaultlib.SyncFIFO
+Compiling module xil_defaultlib.SyncFIFO__parameterized0
+Compiling module xil_defaultlib.SyncFIFO__parameterized1
+Compiling module xil_defaultlib.SyncFIFO__parameterized0_1
+Compiling module xil_defaultlib.RegFile__parameterized2
+Compiling module xil_defaultlib.mkAS1061_CSR
+Compiling module xil_defaultlib.mkAS1061_WB_Stage
+Compiling module xil_defaultlib.mkAS1061
+Compiling module xil_defaultlib.AS1061_Top
+Compiling module xil_defaultlib.Processor_top
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module unisims_ver.SRLC32E_default
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_register_sl...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_generic_baseblo...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_generic_baseblo...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_generic_baseblo...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_generic_baseblo...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_generic_baseblo...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_generic_baseblo...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_data_fifo_v...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top_axi_crossbar_v2...
+Compiling module xil_defaultlib.axi_crossbar_top
+Compiling module xil_defaultlib.axi4_crossbar_top
+Compiling module xil_defaultlib.FIFO1__parameterized1
+Compiling module xil_defaultlib.FIFO1__parameterized2
+Compiling module xil_defaultlib.FIFO1__parameterized3
+Compiling module xil_defaultlib.FIFO2__parameterized20
+Compiling module xil_defaultlib.FIFO2__parameterized21
+Compiling module xil_defaultlib.FIFO2__parameterized20_0
+Compiling module xil_defaultlib.FIFO2__parameterized22
+Compiling module xil_defaultlib.FIFO2__parameterized23
+Compiling module xil_defaultlib.mkPLICAXI4_converter
+Compiling module xil_defaultlib.mkPLIC_LINT_core
+Compiling module xil_defaultlib.mkPLICSync
+Compiling module xil_defaultlib.mkIc_top
+Compiling module xil_defaultlib.axi_plic_top
+Compiling module xil_defaultlib.axi_uart1_address_decoder
+Compiling module xil_defaultlib.axi_uart1_slave_attachment
+Compiling module xil_defaultlib.axi_uart1_axi_lite_ipif
+Compiling module xil_defaultlib.axi_uart1_ipic_if
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.axi_uart1_rx16550
+Compiling module xil_defaultlib.axi_uart1_tx16550
+Compiling module xil_defaultlib.axi_uart1_xuart_tx_load_sm
+Compiling module xil_defaultlib.axi_uart1_uart16550
+Compiling module xil_defaultlib.axi_uart1_xuart
+Compiling module xil_defaultlib.axi_uart1_axi_uart16550
+Compiling module xil_defaultlib.axi_uart1
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_mux__...
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module unisims_ver.RAMB36E1(READ_WIDTH_A=9,READ_WID...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_gener...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_top
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_axi_read_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_axi_read_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_axi_write...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_axi_write...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.sram_128kb_axi_blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.sram_128kb_axi
+Compiling module xil_defaultlib.soc_top_64
+Compiling module xil_defaultlib.AS1061_SYSTEM_TOP
+Compiling module xil_defaultlib.top2_comparator
+Compiling module xil_defaultlib.axi_slave_interface
+Compiling module xil_defaultlib.axi_master_interface
+Compiling module xil_defaultlib.Accelerator_Top
+Compiling module blk_mem_gen_v8_4_1.beh_vlog_ff_clr_v8_4(INIT=1'b0)
+Compiling module blk_mem_gen_v8_4_1.beh_vlog_ff_pre_v8_4(INIT=1'b1)
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b101111...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b101010...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b011010...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b011000...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b0111)
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b111110...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b01000)
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b100010...
+Compiling module blk_mem_gen_v8_4_1.write_netlist_v8_4(C_AXI_TYPE=1)
+Compiling module blk_mem_gen_v8_4_1.blk_mem_axi_write_wrapper_beh_v8...
+Compiling module blk_mem_gen_v8_4_1.beh_vlog_ff_ce_clr_v8_4(INIT=1'b...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b01011)
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b0100)
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b111011...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b01)
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b011101...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b111100...
+Compiling module blk_mem_gen_v8_4_1.beh_vlog_muxf7_v8_4
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_1.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_1.read_netlist_v8_4
+Compiling module blk_mem_gen_v8_4_1.blk_mem_axi_read_wrapper_beh_v8_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="kin...
+Compiling module xil_defaultlib.rom_32KB_axi
+Compiling architecture top_a of entity xil_defaultlib.Top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_bench
+Built simulation snapshot test_bench_behav
